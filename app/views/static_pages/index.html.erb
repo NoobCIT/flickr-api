@@ -1,0 +1,13 @@
+<h1> Flickr Feed Finder </h1>
+
+<%= form_tag(root_path, method: :get) do %>
+
+  <%= label_tag(:user_id, 'Flickr ID or username') %>
+  <%= text_field_tag(:user_id) %>
+  <%= submit_tag('Find Feed') %>
+
+<% end %>
+
+<%#= photos.each do |photo| %>
+  <img src="<%#= FlickRaw.url_b(photo) %>">
+<%# end %>
